@@ -1,0 +1,88 @@
+{
+  "manifest_version": 2,
+
+  "name": "HITC",
+  "description": "Data Privacy in Online Social Networks With Fine-Grained Access Control.",
+  "version": "1.0",
+
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "css": [
+        "Libraries/toastr/css/toastr.min.css"
+      ],
+      "js": [
+        "Libraries/jQuery/jquery.min.js",
+        "Libraries/bootstrap/js/bootstrap.min.js",
+
+        "Libraries/toastr/js/toastr.min.js",
+
+        "Libraries/cryptojs/sha1.js",
+        "Libraries/cryptojs/sha512.js",
+        "Libraries/cryptojs/aes.js",
+
+        "Libraries/cryptico/jsbn.js",
+        "Libraries/cryptico/random.js",
+        "Libraries/cryptico/hash.js",
+        "Libraries/cryptico/rsa.js",
+        "Libraries/cryptico/aes.js",
+        "Libraries/cryptico/api.js",
+
+        "Libraries/seedrandom/seedrandom.min.js",
+
+        "Libraries/codebird/codebird.js",
+
+        "Libraries/hve/mcl.js",
+        "Libraries/hve/mcl_c.js",
+        "Libraries/hve/hve.js",
+
+        "Libraries/jssteg/jsstegencoder-1.0.js",
+        "Libraries/jssteg/jsstegdecoder-1.0.js",
+        "Libraries/jssteg/jssteg-1.0.js",
+
+        "Libraries/ReedSolomon/lib/jasmine-1.3.1/jasmine.js",
+        "Libraries/ReedSolomon/lib/jasmine-1.3.1/jasmine-html.js",
+        "Libraries/ReedSolomon/lib/class.js",
+        "Libraries/ReedSolomon/src/ReedSolomon.js",
+        "Libraries/ReedSolomon/spec/ReedSolomonSpec.js",
+
+        "HITC/CONSTANT.js",
+        "HITC/HELPER.js",
+        "HITC/ALERT.js",
+        "HITC/CONVERT.js",
+        "HITC/CRYPTO.js",
+        "HITC/OPERATION.js",
+        "HITC/STORAGE.js",
+        "HITC/INTEGRATION_TWITTER.js",
+        "HITC/FEC.js",
+        "HITC/IMAGE_STEGANOGRAPHY.js",
+
+        "js/content.js"
+      ]
+    }
+  ],
+
+  "page_action": {
+    "default_icon": "Assets/icon.png",
+    "default_popup": "route.html",
+    "default_title": "HITC"
+  },
+
+  "permissions": [
+    "tabs",
+    "storage",
+    "https://twitter.com/*",
+    "*://*/*"
+  ],
+
+  "web_accessible_resources": [
+    "Libraries/hve/mcl_c.wasm"
+  ],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

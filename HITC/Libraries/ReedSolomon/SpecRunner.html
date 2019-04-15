@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Jasmine Spec Runner</title>
+
+  <script type="text/javascript" src="lib/jasmine-1.3.1/jasmine.js"></script>
+  <script type="text/javascript" src="lib/jasmine-1.3.1/jasmine-html.js"></script>
+
+  <script type="text/javascript" src="lib/underscore.min.js"></script>
+  <script type="text/javascript" src="lib/class.js"></script>
+  <script type="text/javascript" src="src/ReedSolomon.js"></script>
+  <script type="text/javascript" src="spec/ReedSolomonSpec.js"></script>
+
+  <script type="text/javascript">
+    var text = "e3JzguHKwmelLKRHYUVd8IVFUaWQki+qCtRWR8Wc5E1/CCby1kLVz6hQ7G9w3oChGnSqFiQDzuc0Sb0UN9o/P+Cc9ZzLvD4c8CTOQTofGYFbDrIHT6pNs6MAhSxJQWck2XUFJL2Vf0XY/XqzHcYYaRUNWcRylk6XZwepK53DPkkp63nBFfKX++Cv/ImsHt5QiYN9kI9dQOd009L3O/WRcNQJc1Wa2P6TR+l0e3NeC9n0Scnae1kVBIeiXk8m8JSibufW/uV6OdQstoAaFFl2/MIHjiH2NvmVsmUyU/s6s/ZWtLo1+ebVKVU6BjUxzuPm0k1t4op66FE9wVYJTJ3L3w==";
+    var k = text.length;
+    var n = 10; // can correct up to n/2 errors
+
+    var rs = new ReedSolomon(n);
+    var enc = rs.encode(text);
+    var msg = rs.decode(enc);
+
+    console.log("n: " + n);
+    console.log("k: " + k);
+    console.log("n/2: " + n/2);
+    console.log("Encoded: " + enc);
+    console.log("Decoded: " + msg);
+  </script>
+
+</head>
+
+<body>
+</body>
+</html>

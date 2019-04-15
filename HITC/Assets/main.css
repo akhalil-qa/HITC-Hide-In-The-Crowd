@@ -1,0 +1,88 @@
+/* [AHMED] */
+body {
+   width:400px;
+   height:300px;
+}
+/*Fixes*/
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+
+* {
+    box-shadow: none !important;
+    outline: none !important;
+}
+body {
+    font-family: 'Muli', sans-serif;
+    color: #555;
+    background: #f5f5f5;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+}
+
+.connect-database .panel {
+    margin-top: 30%;
+}
+
+.connect-database .panel-heading {
+    background-color: #fff !important;
+    padding: 15px;
+    text-align: center;
+}
+
+.database .header {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.well {
+    background-color: #fff;
+}
+
+.modal-backdrop {
+    background-color: #fff;
+    opacity: 0.9 !important;
+}
+
+.modal-content {
+    box-shadow: none;
+}
+
+.table-title {
+    margin-top: 9px;
+}
+
+/*Spacing*/
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-7 {
+    margin-top: 7px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.time {
+    margin-left: 10px;
+}
+
+/*Custom styles*/
