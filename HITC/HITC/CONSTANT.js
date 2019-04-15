@@ -50,8 +50,8 @@ var CONSTANT = {
   },
 
   TWITTER: {
-    CONSUMER_KEY: "YGO4oblZBlGiZ0TbxDT4QxVKs",
-    CONSUMER_SECRET: "CU42PtsIg6yqwGuVWv4WFylyQGbYisUSfWbUkJjbEaHjoPSBMO",
+    CONSUMER_KEY: "",
+    CONSUMER_SECRET: "",
     CODEBIRD_PROXY: "https://akhalil.blog/DPOSN/codebird-cors-proxy/codebird-cors-proxy.php",
     OAUTH_TOKEN: "OAuthToken",
     OAUTH_TOKEN_SECRET: "OAuthTokenSecret"
